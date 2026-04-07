@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nivetha | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
+    body { background: #0f172a; color: #e2e8f0; }
+
+    header {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 20px 50px; background: #020617; position: sticky; top: 0; z-index: 1000;
+    }
+
+    header h1 { color: #22c55e; }
+
+    nav a { color: #e2e8f0; margin-left: 20px; text-decoration: none; transition: 0.3s; }
+    nav a:hover { color: #22c55e; }
+
+    .hero {
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;  /* important */
+  align-items: center;
+  padding: 0 80px; /* more spacing */
+  flex-wrap: wrap;
+}
+
+   .hero-text {
+  max-width: 500px;
+}
+
+    .hero-text h2 { font-size: 46px; }
+    .hero-text span { color: #22c55e; }
+    .hero-text p { margin: 15px 0; color: #94a3b8; }
+
+    .btn {
+      padding: 10px 20px; background: #22c55e; color: black;
+      border-radius: 5px; text-decoration: none; font-weight: bold;
+    }
+
+   .hero img {
+  width: 260px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #22c55e;
+  box-shadow: 0 0 25px rgba(34,197,94,0.5);
+}
+
+    section { padding: 60px 50px; }
+    h2 { margin-bottom: 20px; color: #22c55e; }
+
+    .about, .skills, .projects, .certifications { max-width: 900px; margin: auto; }
+
+    .skills ul { display: flex; gap: 15px; flex-wrap: wrap; }
+    .skills li { background: #1e293b; padding: 10px 15px; border-radius: 5px; }
+
+    .project-card {
+      background: #1e293b; padding: 20px; border-radius: 10px; margin-top: 15px;
+      transition: 0.3s;
+    }
+    .project-card:hover { transform: translateY(-5px); }
+
+    footer { text-align: center; padding: 20px; background: #020617; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>My Portfolio</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h2>Hello, I'm <span>Nivetha S</span></h2>
+    <p>B.Tech IT Student | Aspiring Software Developer</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </div>
+
+  <!-- ADD YOUR PHOTO HERE -->
+  <img src="my pic.jpeg" alt="Nivetha Photo">
+</section>
+
+<section id="about" class="about">
+  <h2>About Me</h2>
+  <p>
+    I am an Information Technology student at VSB Engineering College with a strong interest in software development and problem-solving. I enjoy building efficient applications, working with databases, and continuously learning new technologies to enhance my technical skills.
+  </p>
+</section>
+
+<section id="skills" class="skills">
+  <h2>Skills</h2>
+  
+  <h3>Technical Skills</h3>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Java</li>
+    <li>MYSQL</li>
+    
+  </ul>
+
+  <h3 style="margin-top:20px;">Soft Skills</h3>
+  <ul>
+    <li>Communication</li>
+    <li>Problem Solving</li>
+    <li>Teamwork</li>
+    <li>Time Management</li>
+    <li>Adaptability</li>
+  </ul>
+</section>
+<section id="certifications" class="certifications">
+  <h2>Certifications</h2>
+
+  <div class="project-card">
+  <h3>Infosys Java Foundation</h3>
+  <p>Completed foundational training in Java programming through Infosys platform.</p>
+</div>
+
+<div class="project-card">
+  <h3>NPTEL – Programming in Java (Elite)</h3>
+  <p>Achieved Elite certification in Java, gaining strong programming fundamentals.</p>
+</div>
+
+<div class="project-card">
+  <h3>NPTEL – Software Testing (Elite)</h3>
+  <p>Earned Elite certification with knowledge in testing methodologies and quality assurance.</p>
+</div>
+
+<div class="project-card">
+  <h3>NASSCOM – Generative AI Fluency (Silver)</h3>
+  <p>Completed Generative AI Fluency program with Silver level recognition from FutureSkills Prime.</p>
+</div>
+
+</section>
+<section id="Awards" class="certifications">
+  <h2>Awards</h2>
+  <div class="project-card">
+  <h3>3rd Prize – Paper Presentation</h3>
+  <p>
+    Secured 3rd prize in a paper presentation at Sri Ramakrishna College of Engineering, Coimbatore, demonstrating strong research and presentation skills.
+  </p>
+</div>
+ </section> 
+<section id="projects" class="projects">
+  <h2>Projects</h2>
+  <div class="project-card">
+    <h3>EcoHaven - Natural Products Website</h3>
+    <p>
+      Developed a clean and responsive website using HTML and CSS to showcase eco-friendly products.
+    </p>
+  </div>
+  <div class="project-card">
+  <h3>Flipping Card Memory Game</h3>
+  <p>Interactive card matching game with animations and score tracking.</p>
+   </div>
+
+<div class="project-card">
+  <h3>Flying Bird Game</h3>
+  <p>Browser-based game inspired by Flappy Bird with obstacle navigation.</p>
+</div>
+<div class="project-card">
+  <h3>AgroVision – Smart Agriculture Platform</h3>
+  <p>A platform that helps farmers with crop insights and better decision-making.</p>
+</div>
+
+<div class="project-card">
+  <h3>EmoTune – Emotion-Based Music App</h3>
+  <p>Suggests music based on user emotions for a personalized experience.</p>
+</div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Phone.No:8248504332</p>
+  <p>Email: nivethasomu01@gmail.com</p>
+  <p>LinkedIn: www.linkedin.com/in/nivetha-s-b23708310</p>
+  <p>GitHub: https://github.com/Nive2501-engg</p>
+</section>
+
+<footer>
+  <p>© 2026 Nivetha. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
